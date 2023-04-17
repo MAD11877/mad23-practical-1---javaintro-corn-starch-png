@@ -33,9 +33,6 @@ public class Question5
     for(int i = num;i > 0;i--) {
       Scanner y = new Scanner(System.in);
       int x = y.nextInt();
-
-      myNum = Arrays.copyOf(myNum, myNum.length + 1);
-      myNum[myNum.length-1] = x;
     }
     int Hnum = 0;
     int Hcount = 0;
