@@ -10,11 +10,13 @@ public class Question2
      * Hint: in.nextDouble() to read double
      */
      
-    Scanner in = new Scanner(System.in);
-    double height = in.nextDouble();
     
     Scanner x = new Scanner(System.in);
     double weight = x.nextDouble();
+    
+    Scanner in = new Scanner(System.in);
+    double height = in.nextDouble();
+   
     
     System.out.println(weight/(height*height));
     
