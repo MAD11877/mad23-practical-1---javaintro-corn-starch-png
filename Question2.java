@@ -13,7 +13,7 @@ public class Question2
     Scanner in = new Scanner(System.in);
     double height = in.nextDouble();
     
-    Scanner w = new Scanner(System.in);
+    Scanner w = new Scanner(System.w);
     double weight = w.nextDouble();
     
     System.out.println(weight/(height*height));
