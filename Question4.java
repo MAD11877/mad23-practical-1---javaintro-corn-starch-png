@@ -18,6 +18,12 @@ public class Question4
      */
      
     Scanner in = new Scanner(System.in);
+    int num = in.nextInt();
+    
+    for(int i = num;i > 0;i--) {
+    
+      System.out.println(String.format("%"+i+"s","").replace(' ', '*'));
+    }
     
   }
 }
