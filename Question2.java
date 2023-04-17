@@ -10,10 +10,11 @@ public class Question2
      * Hint: in.nextDouble() to read double
      */
      
-    
+    System.out.println("Enter weight");
     Scanner x = new Scanner(System.in);
     double weight = x.nextDouble();
     
+    System.out.println("Enter height");
     Scanner in = new Scanner(System.in);
     double height = in.nextDouble();
    
