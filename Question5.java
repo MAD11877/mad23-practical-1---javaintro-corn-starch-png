@@ -27,6 +27,30 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
+    int num = in.nextInt();
+    int[] myNum = {};
     
+    for(int i = num;i > 0;i--) {
+      Scanner y = new Scanner(System.in);
+      int x = y.nextInt();
+
+      myNum = Arrays.copyOf(myNum, myNum.length + 1);
+      myNum[myNum.length-1] = x;
+    }
+    int Hnum = 0;
+    int Hcount = 0;
+    for(int j = 0; j < myNum.length; j++) {
+      int count = 0;
+      for(int k = 0; k < myNum.length; k++) {
+        if(myNum[k] == myNum[j]) {
+            count += 1;
+        }
+      }
+      if(count > Hcount){
+          Hcount = count;
+          Hnum = myNum[j];
+      }
+    }
+    System.out.println(Hnum);
   }
 }
