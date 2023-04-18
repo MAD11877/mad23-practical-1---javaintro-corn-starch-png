@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Question5
@@ -28,24 +29,25 @@ public class Question5
      
     Scanner in = new Scanner(System.in);
     int num = in.nextInt();
-    int[] myNum = {};
+    ArrayList<Integer> myNum = new ArrayList<>();
     
     for(int i = num;i > 0;i--) {
       Scanner y = new Scanner(System.in);
       int x = y.nextInt();
+      myNum.add(x);
     }
     int Hnum = 0;
     int Hcount = 0;
-    for(int j = 0; j < myNum.length; j++) {
+    for(int j = 0; j < myNum.size(); j++) {
       int count = 0;
-      for(int k = 0; k < myNum.length; k++) {
-        if(myNum[k] == myNum[j]) {
+      for(int k = 0; k < myNum.size(); k++) {
+        if(myNum.get(k) == myNum.get(j)) {
             count += 1;
         }
       }
       if(count > Hcount){
           Hcount = count;
-          Hnum = myNum[j];
+          Hnum = myNum.get(j);
       }
     }
     System.out.println(Hnum);
