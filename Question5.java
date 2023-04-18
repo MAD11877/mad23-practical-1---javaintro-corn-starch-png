@@ -32,8 +32,8 @@ public class Question5
     ArrayList<Integer> myNum = new ArrayList<>();
     
     for(int i = num;i > 0;i--) {
-      Scanner y = new Scanner(System.in);
-      int x = y.nextInt();
+      //Scanner y = new Scanner(System.in);
+      int x = in.nextInt();
       myNum.add(x);
     }
     int Hnum = 0;
